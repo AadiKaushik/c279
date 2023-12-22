@@ -1,0 +1,106 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.21456641228246218 0.20512383628470476 0.9549269430213383 1.66180951874208
+  position 0.3159828945802529 -5.023292523257702 2.5271492645337963
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0 0.01
+  floorSize 3 3
+  wallThickness 0.05
+  wallHeight 0.3
+}
+DEF CYLINDER Transform {
+  translation 1.15 0 0.32
+  children [
+    Shape {
+      appearance BrushedAluminium {
+      }
+      geometry Cylinder {
+        height 0.6
+        radius 0.2
+      }
+    }
+  ]
+}
+DEF CAPSULE Transform {
+  translation -1 0 0.46
+  children [
+    Shape {
+      appearance MarbleTiles {
+      }
+      geometry Capsule {
+        height 0.5
+        radius 0.1
+      }
+    }
+  ]
+}
+DEF PLAIN Transform {
+  translation 0 0 0.74
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "C:/Users/aadi_/Desktop/download.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 1.5 1.5
+      }
+    }
+  ]
+}
+DEF CONE Transform {
+  translation 0.64 -0.26 0.47
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.333333 1 0
+        roughness 0.34
+      }
+      geometry Cone {
+        bottomRadius 0.2
+        height 0.5
+        subdivision 40
+      }
+    }
+  ]
+}
+DEF Sphere Transform {
+  translation -0.33 0 0.29
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.666667 1 1
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+}
+DEF BOX Transform {
+  translation 0 0 0.31
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.666667 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.3
+      }
+    }
+  ]
+}
